@@ -3,7 +3,6 @@
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e8e8e8;
     height: 60px;
     /* Reduce the height */
 }

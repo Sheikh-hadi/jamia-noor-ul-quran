@@ -7,7 +7,7 @@ import tableDataSource from '../../model/tableDatasource';
 import dataList from '../../model/ListData';
 import Header from '../header/Header';
 import FilterBar from '../FilterBar';
-import { Footer } from 'antd/es/layout/layout';
+import CustomFooter from '../footer/Footer';
 
 const DataList = () => {
     const [showTable, setShowTable] = useState(false);
@@ -77,7 +77,7 @@ const DataList = () => {
                     </div>
                 </Col>
             </Row>
-            <Footer/>
+            <CustomFooter/>
         </div>
     );
 };
