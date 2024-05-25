@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Input, Select, Row, Col, List, Typography } from 'antd';
+import { Input, Select, Row, Col} from 'antd';
 import axios from 'axios';
 import './searchFilter.css'; // Import custom CSS for styling
 
 const { Option } = Select;
-const { Text } = Typography;
 
 const SearchFilter = () => {
     const [searchText, setSearchText] = useState("");
