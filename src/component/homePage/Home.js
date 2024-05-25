@@ -2,21 +2,17 @@ import React from 'react';
 import './home.css';
 import { Row, Col, Image, Typography } from 'antd';
 import Header from '../header/Header';
-import Footer from '../Footer';
 import { Link } from 'react-router-dom';
-import AddNewDrawer from '../AddNewDrawer';
-import SearchFilter from '../SearchFilter';
-const {Title } = Typography;
+import FilterBar from '../FilterBar';
+import { Footer } from 'antd/es/layout/layout';
+import CustomFooter from '../footer/Footer';
+const { Title } = Typography;
 const Home = () => {
     return (
         <div>
 
             <Header />
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', gap: 10 }}>
-                <SearchFilter />
-                <AddNewDrawer />
-            </div>
-
+            <FilterBar />
             <div className="home-container">
                 <Row style={{ marginTop: "10px" }} gutter={140} >
                     <Col span={8}>
@@ -139,7 +135,7 @@ const Home = () => {
 
                 </Row>
             </div>
-            <Footer />
+            <CustomFooter/>
         </div>
     );
 }

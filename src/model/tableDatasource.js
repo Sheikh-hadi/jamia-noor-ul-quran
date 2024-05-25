@@ -5,7 +5,9 @@ const tableDataSource = [
         mobile: 12345678910,
         cnic: 1234567891011,
         time: 12345,
-        paidamount: 15000,
+        paid: "100",
+        due: "50",
+        category: "camel",
         address: '10 Downing Street',
     },
     {
@@ -33,12 +35,7 @@ const tableDataSource = [
         name: 'John',
         address: '10 Downing Street',
     },
-    {
-        key: '7',
-        name: 'Mike',
-        address: '10 Downing Street',
-    },
-    
+
 ];
 
 export default tableDataSource;

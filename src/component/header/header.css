@@ -1,40 +1,78 @@
-/* header.css */
 .header-container {
-    background-color: #f0f2f5;
-    /* Light background color */
+    background-color: #f8f9fa;
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    height: 60px;
+    /* Reduce the height */
 }
 
 .logo {
-    max-width: 60%;
-    /* Ensure the logo is responsive */
+    width: 100%;
+    max-width: 50px;
     height: auto;
 }
 
 .title {
-    text-align: center;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Remove default margins */
+    color: #333;
+    text-align: center;
+}
+
+.username {
+    margin: 0;
+    text-align: right;
 }
 
 .user {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-.user img {
-    border-radius: 50%;
-    margin-right: 10px;
-    /* Space between image and name */
+.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
-.user .ant-typography {
-    margin: 0;
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #1890ff;
+}
+
+.dropdown-item:hover link {
+    color: #1890ff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .username {
+        font-size: 14px;
+    }
+
+    .user img {
+        width: 30px;
+        height: 30px;
+    }
 }

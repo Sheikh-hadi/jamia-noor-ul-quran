@@ -1,10 +1,26 @@
-/* SearchFilter.css */
-
-.search-filter {
-    background-color: #f7f7f7;
-    border-radius: 14px;
+.custom-search .ant-input,
+.custom-search .ant-input-affix-wrapper {
+    height: 28px;
+    /* Adjust the height to your desired value */
+    line-height: 28px;
+    font-size: 14px;
+    /* Ensure the font size matches */
 }
 
-.ant-input {
-    border-radius: 4px;
+.custom-search .ant-input-search-button {
+    height: 28px;
+    /* Adjust the height to match the input */
+    line-height: 28px;
+}
+
+.custom-search .ant-input-clear-icon {
+    line-height: 28px;
+    height: 28px;
+    /* Adjust the height to match the input */
+}
+
+.custom-search .ant-input-clear-icon:hover {
+    line-height: 28px;
+    height: 28px;
+    /* Ensure hover state is consistent */
 }

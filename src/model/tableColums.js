@@ -1,12 +1,10 @@
 import { MessageOutlined, WhatsAppOutlined } from '@ant-design/icons';
-import { Select } from 'antd';
+import { Select, Tooltip } from 'antd';
 import categoryOption from './categoryOption';
 import tableHissa from './tableHissa';
 
 const handleCategoryChange = (value, key) => {
-    // Handle the category change
     console.log(`Changed category of record ${key} to ${value}`);
-    // Update the state or send the new value to the server
 };
 
 const { Option } = Select;
@@ -16,39 +14,46 @@ const tableColumns = [
         title: 'S/N',
         dataIndex: 'serialNumber',
         key: 'serialNumber',
-        width: '1%',
+        // width: '1%',
         render: (text, record, index) => index + 1,
     },
     {
         title: 'Contact Information',
         key: 'contact',
-        width: '30%',
         render: (text, record) => (
-            <div>
+            <span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#333" }}>
                     {record.name}
                 </span>
-                <WhatsAppOutlined className='icon' style={{ marginLeft: "10px", fontSize: "15px" }} />
-                <MessageOutlined className='icon' style={{ marginLeft: "5px", fontSize: "15px" }} />
-                <div style={{ marginTop: "5px", color: "#555" }}>
-                    {record.mobile}
-                </div>
-            </div>
+                {record.mobile ? (
+                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: "5px", color: "#555" }}>
+                        {record.mobile}
+                        <span>
+                            <Tooltip title="Open WhatsApp">
+                                <WhatsAppOutlined key="whatsapp" className="icon" />
+                            </Tooltip>
+                            <Tooltip title="Open Messanger">
+                                <MessageOutlined className='icon' style={{ marginLeft: "5px", fontSize: "15px" }} />
+                            </Tooltip>
+                        </span>
+                    </div>
+                ) : null}
+            </span>
         ),
     },
     {
         title: 'CNIC',
         dataIndex: 'cnic',
         key: 'cnic',
-        width: '10%',
+        // width: '10%',
     },
     {
-        title: 'Cow Category',
-        dataIndex: 'cowcategory',
+        title: 'Category',
+        dataIndex: 'category',
         key: 'category',
-        width: '10%',
         render: (text, record) => (
             <Select
+                size='small'
                 defaultValue={text}
                 style={{ width: '100%' }}
                 onChange={(value) => handleCategoryChange(value, record.key)}
@@ -59,27 +64,11 @@ const tableColumns = [
             </Select>
         ),
     },
-    {
-        title: 'Hissa Category',
-        dataIndex: 'hisacategory',
-        key: 'hisa',
-        width: '10%',
-        render: (text, record) => (
-            <Select
-                defaultValue={text}
-                style={{ width: '100%' }}
-                onChange={(value) => handleCategoryChange(value, record.key)}
-            >
-                {tableHissa.map((item, index) => (
-                    <Option key={index} value={item.value}>{item.label}</Option>
-                ))}
-            </Select>
-        ),
-    },
+
     {
         title: 'Amount Status',
         key: 'amount',
-        width: '30%',
+        // width: '30%',
         render: (text, record) => (
             <div>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#333" }}>
@@ -95,13 +84,13 @@ const tableColumns = [
         title: 'Time',
         dataIndex: 'time',
         key: 'time',
-        width: '10%',
+        // width: '10%',
     },
     {
         title: 'Address',
         dataIndex: 'address',
         key: 'address',
-        width: '20%',
+        // width: '20%',
     },
 ]
 
