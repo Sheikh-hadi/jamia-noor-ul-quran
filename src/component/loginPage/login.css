@@ -1,0 +1,70 @@
+/* src/components/GmailLoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-left: -280px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.login-box {
+    width: 50vw;
+    max-width: 400px;
+    padding: 20% 35% 35% 35%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
+
+.ant-input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.ant-btn-primary {
+    background-color: #4285f4;
+    border-color: #4285f4;
+}
+
+.ant-btn-primary:hover {
+    background-color: #357ae8;
+    border-color: #357ae8;
+}
+
+.ant-btn-block {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.forgot-email {
+    margin-top: 16px;
+    text-align: left;
+}
+
+.create-account {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.create-account .ant-btn-link {
+    padding: 0;
+}

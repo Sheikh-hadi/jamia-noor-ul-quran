@@ -1,0 +1,52 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cow-img {
+     border-radius: 50%;
+}
+
+/* General styles */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Overlay image positioning */
+.overlay-img {
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    width: 80px;
+    /* Adjust the size as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cow-img {
+        width: 100px;
+    }
+
+    .overlay-img {
+        width: 50px;
+        right: 20px;
+        bottom: -2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cow-img {
+        width: 80px;
+    }
+
+    .overlay-img {
+        width: 40px;
+        right: 10px;
+        bottom: -1px;
+    }
+}

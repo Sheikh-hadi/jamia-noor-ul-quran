@@ -1,0 +1,40 @@
+/* header.css */
+.header-container {
+    background-color: #f0f2f5;
+    /* Light background color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 60%;
+    /* Ensure the logo is responsive */
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Remove default margins */
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Space between image and name */
+}
+
+.user .ant-typography {
+    margin: 0;
+}

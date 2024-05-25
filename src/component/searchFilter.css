@@ -1,0 +1,10 @@
+/* SearchFilter.css */
+
+.search-filter {
+    background-color: #f7f7f7;
+    border-radius: 14px;
+}
+
+.ant-input {
+    border-radius: 4px;
+}

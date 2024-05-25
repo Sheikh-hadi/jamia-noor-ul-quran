@@ -1,0 +1,41 @@
+
+
+/* .box {
+  width: 600px;
+  height: 250px;
+  background-color: crimson;
+}
+
+.inner {
+  width: 50vw;
+  height: 200px;
+  background-color: blue;
+  text-align: center;
+} */
+
+/* .parent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.child1 {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border: 5px solid #000;
+}
+
+.child2 {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border: 5px solid #000;
+} */
+.icon:hover {
+  transform: scale(1.6);
+  /* Zoom in on hover */
+}

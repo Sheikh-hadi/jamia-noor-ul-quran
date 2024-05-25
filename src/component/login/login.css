@@ -1,0 +1,52 @@
+.html,
+body {
+    background-color: rgb(236, 233, 233);
+}
+
+.login-container {
+    margin: 6%;
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-left: "-160px";
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-form-item {
+    margin-bottom: 16px;
+}
+
+.ant-input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.ant-btn-primary {
+    background-color: #4285f4;
+    border-color: #4285f4;
+}
+
+.ant-btn-primary:hover {
+    background-color: #357ae8;
+    border-color: #357ae8;
+}
+
+.ant-btn-block {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.forgot-email {
+    margin-top: 16px;
+    text-align: left;
+}
+
